@@ -9,10 +9,8 @@ public class Main {
     
     public static void main(String[] args) {
         Map<Character, Integer> map = new HashMap<>();
-
         int value = 0;
         char l = 0;
-
         for (int i = 0; i < TEXT.length(); i++) {
             if (Character.isLetter(TEXT.charAt(i))) {
                 if (!map.containsKey(TEXT.charAt(i))) {
@@ -36,7 +34,7 @@ public class Main {
                 l = kv.getKey();
             }
         }
-        System.out.println("Максимальное значение: " + l + ", равное " + max);
+        System.out.println("Максимально букв: " + l + ", равно " + max);
     }
 
     public static void min(Map<Character, Integer> map) {
@@ -48,7 +46,7 @@ public class Main {
                 l = kv.getKey();
             }
         }
-        System.out.println("Минимальное значение: " + l + ", равное " + min);
+        System.out.println("Минимально букв: " + l + ", равно " + min);
     }
 
 }
